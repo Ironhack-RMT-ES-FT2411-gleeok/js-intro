@@ -330,3 +330,60 @@ if (naranjas === 0) {
 if (peras === 1) {
   console.log("tambien le puedes agregar peras")
 }
+
+
+
+// valores con aspectos thruty o falsy
+
+
+// if (30 === 30) {
+//   console.log("esto se imprime")
+// }
+
+if (0 || "" || undefined || null || false || NaN) {
+  // .todos los valores son falsy
+  console.log("esto se imprime?")
+}
+
+// if (0 == "") {
+//   console.log("Esto ocurre?")
+// }
+
+let userFirstName = "Bob";
+
+if (userFirstName) {
+  console.log(`Hola ${userFirstName}, bienvenido a la página`)
+} else {
+  console.log(`Hola extraño, bienvenido a la página`)
+}
+
+
+// LOOPS
+
+/* 
+
+for ( 
+variable control; 
+condicion que indica cuando debe continuar el bucle;
+expresion final que modifica variable control;
+) {
+  lo que se debe ejecutar X cantidad de veces en el loop
+}
+
+*/
+
+for ( let patata = 5; patata <= 10; patata = patata += 0.5 ) {
+
+  // let patata = 0 // esto ocurre una sola vez
+
+  // if ( patata < 10) continua con el loop
+
+  console.log(patata)
+
+  // patata = patata + 1 // ocurre siempre al final de canda iteración
+
+}
+
+for (let i = 0; i < 20000; i++) {
+  console.log(i)
+}
