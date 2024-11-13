@@ -384,6 +384,42 @@ for ( let patata = 5; patata <= 10; patata = patata += 0.5 ) {
 
 }
 
-for (let i = 0; i < 20000; i++) {
-  console.log(i)
+// for (let i = 0; i < 20000; i++) {
+//   console.log(i)
+// }
+
+
+// loops que iteran por strings
+
+let palabraCifrada = "B?!*??!n!!*!n?!*?!? !w1!w??!k!o???o!! 1!!???o";
+
+// 1. reemplazar todas las "*" por "a"
+// 2. eliminar todos los "!" y "?"
+// 3. no tomar en cuenta despues del " "
+
+let codigoSecreto = ""; // variable control que eventualmente será el resultado final
+
+for (let i = 0; i < palabraCifrada.length; i++) {
+
+  let caracter = palabraCifrada[i]
+
+  // ...
+  if (caracter === "*") {
+    caracter = "a"
+  } else if (caracter === "!" || caracter === "?") {
+    // caracter = ""
+    continue // salta este iteración
+  } else if (caracter === " ") {
+    break // detener el loop
+  }
+
+  codigoSecreto = codigoSecreto + caracter
+
 }
+
+console.log(codigoSecreto)
+
+
+
+
+
